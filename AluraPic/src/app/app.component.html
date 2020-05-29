@@ -1,2 +1,5 @@
-<ap-photo url="https://i.pinimg.com/originals/36/ec/bd/36ecbdfd29044348d3cc359a40652829.jpg" description="Cafe1"></ap-photo>
-<ap-photo url="https://img.elo7.com.br/product/original/20115D5/camiseta-quero-cafe-camisa-criativa-meme-vovo-do-cafe-estampa-engracada.jpg" description="Cafe2"></ap-photo>
+<ap-photo 
+    *ngFor="let photo of photos"
+    [url]="photo.url"
+    [description]="photo.description">
+</ap-photo>
