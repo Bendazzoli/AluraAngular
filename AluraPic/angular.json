@@ -120,6 +120,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "AluraPic"
+    }
+  },
+  "defaultProject": "AluraPic",
+  "cli": {
+    "analytics": "1a72354d-4b74-4eeb-abf1-be1e25931208"
+  }
 }
