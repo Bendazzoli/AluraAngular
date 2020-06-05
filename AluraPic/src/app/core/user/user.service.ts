@@ -28,4 +28,9 @@ export class UserSerice{
         const user = jwt_decode(token) as User;
         this.userSubject.next(user);
     }
+
+    logout(){
+        this.tokenService.removeToken();
+        this.userSubject.next(null);
+    }
 }
