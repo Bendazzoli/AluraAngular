@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { UserSerice } from '../user/user.service';
+import { UserService } from '../user/user.service';
 import { Observable } from 'rxjs';
 import { User } from '../user/user';
 import { Router } from '@angular/router';
@@ -8,16 +8,18 @@ import { Router } from '@angular/router';
     selector: 'ap-header',
     templateUrl: './header.component.html'
 })
-export class HeaderComponent{
+export class HeaderComponent { 
 
     user$: Observable<User>;
 
-    constructor(private userService: UserSerice,
-                private router:Router){
+    constructor(
+        private userService: UserService, 
+        private router:Router) {
+
         this.user$ = userService.getUser();
     }
 
-    logout(){
+    logout() {
         this.userService.logout();
         this.router.navigate(['']);
     }
