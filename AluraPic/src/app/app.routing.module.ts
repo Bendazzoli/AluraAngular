@@ -12,10 +12,10 @@ const routes: Routes = [
         pathMatch: 'full',
         redirectTo: 'home'
     },
-    {
+    { 
         path: 'home',
         loadChildren: './home/home.module#HomeModule'
-    },
+    },              
     { 
         path: 'user/:userName', 
         component: PhotoListComponent,
@@ -35,7 +35,7 @@ const routes: Routes = [
 
 @NgModule({
     imports: [ 
-        RouterModule.forRoot(routes, {useHash: true}) 
+        RouterModule.forRoot(routes, { useHash: true } ) 
     ],
     exports: [ RouterModule ]
 })

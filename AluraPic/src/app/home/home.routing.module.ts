@@ -6,7 +6,6 @@ import { AuthGuard } from '../core/auth/auth.guard';
 import { SignInComponent } from './signin/signin.component';
 import { SignUpComponent } from './singup/singup.component';
 
-
 const routes: Routes = [
     { 
         path: '',
@@ -20,14 +19,14 @@ const routes: Routes = [
             { 
                 path: 'signup',
                 component: SignUpComponent,
-            }
+            },            
         ]
-    }
+    },              
 ];
 
 @NgModule({
     imports: [ 
-        RouterModule.forChild(routes)
+        RouterModule.forChild(routes) 
     ],
     exports: [ RouterModule ]
 })
