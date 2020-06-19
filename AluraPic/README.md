@@ -26,8 +26,14 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
 
+## Servidor Log
+Access the path `AluraPic/log-server`
+- DON'T run `npm install`!!!
+- JUST to put server up, use `npm start`.
+- This server can be access in `http://localhost:7000`.
 
 ## Servidor API Backend
 Access the path `AluraPic/servidor_api/api`
 - Just one time, use `npm install` for download all dependencies
-- And to put server up, use `npm start`
+- And to put server up, use `npm start`.
+- This server can be access in `http://localhost:3000`.
